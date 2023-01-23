@@ -9,7 +9,7 @@ const Navbar = ({from}) => {
   const [navOpen, setnavOpen] = useState(false);
 
   return (
-    <header className="fixed  w-full h-16 bg-neutral-500 shadow-md transition  ">
+    <header className="fixed w-full h-16 bg-neutral-500 shadow-md transition  ">
         <nav className="container m-auto py-2 lg:px-20 ">
             <div className="relative flex flex-wrap items-center justify-between">
                 <div className="relative z-10 w-full px-6 flex items-center justify-between lg:w-auto">

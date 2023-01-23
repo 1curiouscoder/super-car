@@ -4,7 +4,7 @@ import { footer } from '../Data/Data';
 const Footer = () => {
     
   return (
-    <footer className="  flex-end md:justify-center w-screen self-end">
+    <footer className="flex-col md:justify-center">
     <ul className=" flex flex-col sm:flex-row flex-wrap nav justify-center pb-3 mb-3 mx-2 border-b-2">
         {
             footer.map(link => <li key={"footer "+link.innerText} className="nav-item py-1 hover:text-slate-500 "><Link href={link.href} className={link.ClassName}>{link.innerText}</Link></li>)

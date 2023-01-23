@@ -87,7 +87,7 @@ import { useEffect } from 'react';
   return (
     <form className=" " onSubmit={handleSubmit(onSubmit)}>
   <div className=" flex flex-col justify-center lg:w-max">
-  <div className='flex flex-wrap '>
+  <div className='flex self-center flex-wrap '>
     <div onClick={() => {setTrip("oneway"); unregister("edate"); } } className={ styles.home.optionText + ((trip=="oneway") ? "border-black rounded-xl m-2 border-2 p-2" : "rounded-xl m-2 border-2 p-2 hover:border-yellow-900")}>Oneway Trip</div>
     <div onClick={() => {setTrip("round"); } } className={ styles.home.optionText + ((trip=="round") ? "border-black  rounded-xl m-2 border-2 p-2" : "rounded-xl border-2 p-2 hover:border-yellow-900 m-2")}>Round Trip</div>
     <div onClick={() => {setTrip("hourly"); unregister("edate"); unregister("dest"); } } className={styles.home.optionText + ((trip=="hourly") ? "border-black  rounded-xl m-2 border-2 p-2" : "rounded-xl border-2 p-2 hover:border-yellow-900 m-2")}>Hourly</div>

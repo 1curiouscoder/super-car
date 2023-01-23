@@ -1,14 +1,6 @@
-#root {
-  min-width: 100vw;
-  min-height:100vh;
-  margin: 0 auto;
-}
+
 /* app component style */
-.app
-{
-  min-height:100vh;
-  min-width: 100vw; 
-}
+
 
 /*---------------------------------------------- Header Styles-------------------------------------------------*/
 nav
