@@ -15,8 +15,8 @@ const Signup = ({payload}) => {
 
   return (
     <div className='flex flex-col justify-between h-screen'>
-        <Navbar />
-        <div></div>
+        <Navbar from="home" payload={payload} />
+        <div className='mt-12'></div>
         <Card type="signup" className={style} payload={data} />
         <div></div>
     </div>

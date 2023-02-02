@@ -51,7 +51,7 @@ export const links =
                 innerText:"Home",
                 key:"home",
                 to:"/",
-                styles:"block w-full py-3 transition hover:text-slate-700",
+                styles:"block w-full py-3 transition hover:text-slate-700 ",
                 type:"link",
             },
             {
@@ -85,7 +85,29 @@ export const links =
             }
         ],
         profile:[
-
+            {
+                innerText:"My profile",
+                key:"profile",
+                to:"/",
+                styles:"block w-full py-3 transition hover:text-slate-700",
+                type:"link",
+            },
+            
+            {
+                innerText:"Blog",
+                key:"blog",
+                to:"/",
+                styles:"block w-full py-3 transition hover:text-slate-700",
+                type:"link",
+            },
+            {
+                innerText:"Logout",
+                key:"logout",
+                to:"/login",
+                styles:"block w-max py-3 px-6 rounded-3xl bg-black transition hover:bg-cyan-800 focus:bg-cyan-500 active:bg-cyan-800 block w-full py-3 transition hover:text-slate-700",
+                span_style:"block text-center text-white hover:text-black font-semibold lg:text-base ",
+                type:"button",
+            },
         ]
 
     };

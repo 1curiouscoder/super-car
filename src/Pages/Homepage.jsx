@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer';
 import { InputTag } from '../Components/InputTag';
 import { useState } from 'react';
 
-const Homepage = () => {
+const Homepage = ({payload}) => {
   const { register, handleSubmit, watch, setValue, formState: { errors } ,unregister} = useForm();  
   const [trip, setTrip] = useState("oneway");
   
@@ -17,7 +17,7 @@ const Homepage = () => {
   const data = {register, handleSubmit, watch, setValue,errors, onSubmit,trip,setTrip,unregister};
   return (
     <div className='flex flex-col justify-between '>
-    <Navbar from="home" />
+    <Navbar from="home" payload={payload} />
     <div className='mt-16'></div>
     <div className='flex flex-wrap justify-between'>
       <div className='flex flex-col sm:flex-row self-center '>

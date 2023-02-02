@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState ,useEffect } from 'react'
 import './App.css'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import Errorpage from './Pages/Errorpage';
@@ -10,7 +10,12 @@ import Profile from './Pages/Profile';
 function App() {
   
 const [flags,setFlags] = useState({login:false, username:null});
-  
+
+  useEffect(() => {
+    const data = window.localStorage.getItem("login_state");
+    if(data != null) setFlags(JSON.parse(data));
+    console.log("effect2")
+  },[]);
 const data = {flags, setFlags};
 
 const router = createBrowserRouter([

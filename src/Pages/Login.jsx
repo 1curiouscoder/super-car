@@ -20,9 +20,8 @@ export const Login = ({intent,payload }) => {
         if(password===cred.password)
         {
           console.log(data);
-          flags.login = true;
-          flags.username = username;
-          setFlags(flags);
+          window.localStorage.setItem("login_state", JSON.stringify({login: true , username:username}));
+          setFlags({login: true , username:username});
         }
         else
         {
@@ -37,7 +36,8 @@ export const Login = ({intent,payload }) => {
 
   return(
   <div className='flex flex-col justify-between h-screen'>
-      <Navbar from ="login" />
+      <Navbar from ="login" payload={payload
+      } />
       { flags.login && <Navigate to={"/profile/"+flags.username} /> }
       <div></div>
       <Card type={intent} className={style} payload={data} />
