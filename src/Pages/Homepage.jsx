@@ -17,24 +17,21 @@ const Homepage = ({payload}) => {
   const data = {register, handleSubmit, watch, setValue,errors, onSubmit,trip,setTrip,unregister};
   return (
     <div className='flex flex-col justify-between '>
-    <Navbar from="home" payload={payload} />
-    <div className='mt-16'></div>
-    <div className='flex flex-wrap justify-between'>
-      <div className='flex flex-col sm:flex-row self-center '>
+    <div className='mb-14'> <Navbar from="home" payload={payload} /> </div>
+    <div className='flex justify-center'>
+      <label id="heading" className='text-[30px] font-mono shadow-sm underline py-4' >Book a Cab</label>
+    </div>
+    <div className='flex self-center'>
           <Card type="home" payload={data} />
-          <div className='flex flex-col self-center m-4 p-4 font-mono rounded-xl bg-indigo-400 shadow-lg'>
-            <h1 className='text-xl font-bold text-center mb-4 '>Best Rates for Cab Booking at EaseMyTrip</h1>
-            <article className='text-m text-center font-sans'>
-            EaseMyTrip offers the best cab operators and drivers for every prime location of India to make your journey hassle-free. 
-            We ensure you an unforgettable experience while traveling with us. We have tied up with 4000+ cab operators to offer the best online cab booking facility. 
-            Customers can choose the cab from the different categories of cabs including Hatchback, sedan, SUV, and many more. This online taxi booking facility of EaseMyTrip also offers taxi services at discounted rates. 
-            So, what are you waiting for? Book your cab with EaseMyTrip and travel comfortably.
-            </article>
+          <div className='flex flex-wrap'> 
+            <div className='flex'></div>
+            <div className='flex'></div>
+            <div className='flex'></div>
+            <div className='flex'></div>
           </div>
-      </div>
     </div>
     
-    <div className='flex flex-col justify-between my-4'> 
+    <div className='flex flex-col justify-between my-4 '> 
     <div></div>
     <img src="https://www.easemytrip.com/images/cab-img/cab-republic-sale-strip.png" className='w-screen  self-center shadow-lg mx-4' />
     <div className='flex flex-col  m-2 p-4'>

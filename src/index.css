@@ -8,6 +8,14 @@
   background-color: #dddfd4;
   
 }
+#heading {
+  font-family: 'Poppins', sans-serif;
+font-family: 'Tilt Warp', cursive;
+}
+
+.nav-links{
+  font-family: 'Roboto', sans-serif;
+}
 /*
 .force-to-bottom {
   position:absolute;

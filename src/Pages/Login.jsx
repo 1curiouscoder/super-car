@@ -2,12 +2,12 @@ import React from 'react'
 import Card from '../Components/Card';
 import { useForm } from 'react-hook-form';
 import Navbar from '../NavBar/Navbar';
-import { Navigate, redirect } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 import { credentials as cred } from '../Data/Data';
 export const Login = ({intent,payload }) => {
   const { flags, setFlags } = payload;
-  
-  { flags.login && <Navigate to={"/profile/"+flags.username } />}
+  const navigate = useNavigate();
+  { flags.login &&  navigate("/profile/"+flags.username, { replace: true });}
 
   const { register, handleSubmit, watch, setValue,  formState: { errors },unregister} = useForm();
   const onSubmit = (data) =>
